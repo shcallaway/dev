@@ -25,7 +25,7 @@ zsh () {
 
 # Git
 g () {
-  if "$@" ; then
+  if [ "$1" ] ; then
     command git $@
   else
     echo "Usage: g [<options>] <command> [<args>]"
