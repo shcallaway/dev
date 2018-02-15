@@ -51,3 +51,23 @@ cb () {
       ;;
   esac
 }
+
+# Docker Compose
+dc () {
+  if [ "$1" ] ; then
+    command docker-compose $@
+  else
+    echo "Usage: dc [<options>] <command> [<args>]"
+    echo "Commands: any valid docker-compose commmand"
+  fi
+}
+
+# Docker
+d () {
+  if [ "$1" ] ; then
+    command docker $@
+  else
+    echo "Usage: d [<options>] <command> [<args>]"
+    echo "Commands: any valid docker commmand"
+  fi
+}
