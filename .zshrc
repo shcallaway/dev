@@ -42,8 +42,9 @@ cb () {
     stop)
       command /crunchbase/stop-hybrid.sh
       ;;
-    jenkinsdocker)
-      command /crunchbase/ops_tools/bin/jenkins-docker "${@:2}"
+    jenkins)
+      JENKINS_DOCKER=/crunchbase/ops_tools/bin/jenkins-docker
+      command $JENKINS_DOCKER exec -ti $($JENKINS_DOCKER ps -a | grep docker_jenkins | awk '{print $1}') bash
       ;;
     *)
       echo "Usage: cb <command> [<args>]"
