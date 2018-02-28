@@ -26,31 +26,11 @@ zsh () {
 # Git
 g () {
   if [ "$1" ] ; then
-    command git $@
+    command hub $@
   else
     echo "Usage: g [<options>] <command> [<args>]"
-    echo "Commands: any valid git commmand"
+    echo "Commands: any valid 'git' or 'hub' commmand"
   fi
-}
-
-# Crunchbase
-cb () {
-  case "$1" in
-    start)
-      command /crunchbase/start-hybrid.sh
-      ;;
-    stop)
-      command /crunchbase/stop-hybrid.sh
-      ;;
-    jenkins)
-      JENKINS_DOCKER=/crunchbase/ops_tools/bin/jenkins-docker
-      command $JENKINS_DOCKER exec -ti $($JENKINS_DOCKER ps -a | grep docker_jenkins | awk '{print $1}') bash
-      ;;
-    *)
-      echo "Usage: cb <command> [<args>]"
-      echo "Commands: start,stop,jenkinsdocker"
-      ;;
-  esac
 }
 
 # Docker Compose
@@ -59,7 +39,7 @@ dc () {
     command docker-compose $@
   else
     echo "Usage: dc [<options>] <command> [<args>]"
-    echo "Commands: any valid docker-compose commmand"
+    echo "Commands: any valid 'docker-compose' commmand"
   fi
 }
 
@@ -69,6 +49,6 @@ d () {
     command docker $@
   else
     echo "Usage: d [<options>] <command> [<args>]"
-    echo "Commands: any valid docker commmand"
+    echo "Commands: any valid 'docker' commmand"
   fi
 }

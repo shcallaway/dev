@@ -6,10 +6,11 @@ A place for all my favorite tools.
 
 1. [Homebrew](https://brew.sh/)
 2. [iTerm2](https://www.iterm2.com/)
-3. [ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#macos) and [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
-4. [Sublime Text 3](https://www.sublimetext.com/3)
-5. [Node](https://nodejs.org/en/)
-6. [Docker](https://www.docker.com/docker-mac)
+3. [ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#macos) (available via Homebrew) and [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+4. [Hub](https://hub.github.com/) (available via Homebrew)
+5. [Sublime Text 3](https://www.sublimetext.com/3)
+6. [Node](https://nodejs.org/en/) (available via Homebrew)
+7. [Docker](https://www.docker.com/docker-mac) (available via Homebrew)
 
 ## Todo
 
