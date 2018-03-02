@@ -16,3 +16,4 @@ A place for all my favorite tools.
 
 - [ ] Create and export an iTerm2 profile
 - [ ] Write a script that installs all of the above
+- [ ] Add Kubernetes installation step

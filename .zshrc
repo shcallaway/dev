@@ -52,3 +52,13 @@ d () {
     echo "Commands: any valid 'docker' commmand"
   fi
 }
+
+# Kubernetes
+k () {
+  if [ "$1" ] ; then
+    command kubectl $@
+  else
+    echo "Usage: k [<options>] <command> [<args>]"
+    echo "Commands: any valid 'kubectl' commmand"
+  fi
+}
