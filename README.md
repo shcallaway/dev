@@ -11,6 +11,7 @@ A place for all my favorite tools.
 5. [Sublime Text 3](https://www.sublimetext.com/3)
 6. [Node](https://nodejs.org/en/) (available via Homebrew)
 7. [Docker](https://www.docker.com/docker-mac) (available via Homebrew)
+8. [Moom](https://manytricks.com/moom/) (requires a license)
 
 ## Todo
 
