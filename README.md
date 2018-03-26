@@ -12,6 +12,7 @@ A place for all my favorite tools.
 6. [Node](https://nodejs.org/en/) (available via Homebrew)
 7. [Docker](https://www.docker.com/docker-mac) (available via Homebrew)
 8. [Moom](https://manytricks.com/moom/) (requires a license)
+9. [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) (requires a license)
 
 ## Todo
 
