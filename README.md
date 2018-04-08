@@ -2,8 +2,6 @@
 
 A place for all my favorite tools.
 
-## New Machine Setup
-
 * [Homebrew](https://brew.sh/)
 * [iTerm2](https://www.iterm2.com/)
 * [ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#macos) (available via Homebrew)
@@ -15,9 +13,3 @@ A place for all my favorite tools.
 * [Moom](https://manytricks.com/moom/) (requires a license)
 * [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) (requires a license)
 * [1Password](https://1password.com/)
-
-## Todo
-
-- [ ] Create and export an iTerm2 profile
-- [ ] Write a script that installs all of the above
-- [ ] Add Kubernetes installation step
