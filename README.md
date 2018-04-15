@@ -5,6 +5,7 @@ A place for all my favorite tools.
 * [Homebrew](https://brew.sh/)
 * [iTerm2](https://www.iterm2.com/)
 * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+* [ngrok](https://ngrok.com/download)
 
 ## License Required
 
