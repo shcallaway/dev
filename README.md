@@ -2,17 +2,20 @@
 
 A place for all my favorite tools.
 
+## Free
+
 * [Homebrew](https://brew.sh/)
 * [iTerm2](https://www.iterm2.com/)
 * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
 * [ngrok](https://ngrok.com/download)
+* [Alfred](https://www.alfredapp.com/)
+* [VS Code](https://code.visualstudio.com/)
 
 ## License Required
 
 * [Moom](https://manytricks.com/moom/)
 * [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)
 * [1Password](https://1password.com/)
-* [Sublime Text 3](https://www.sublimetext.com/3)
 
 ## Available Via Homebrew
 
