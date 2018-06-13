@@ -10,9 +10,11 @@ alias s='open -a "Sublime Text"'
 # ZSH
 zsh () {
   case "$1" in
+    # Opens ZSH configuration in Vim
     config)
       command vi ~/.zshrc
       ;;
+    # Sources the ZSH configuration
     source)
       source ~/.zshrc
       ;;
@@ -25,11 +27,19 @@ zsh () {
 
 # Git
 g () {
-  if [ "$1" ] ; then
-    command hub $@
-  else
+  if ! [ "$1" ] ; then
     echo "Usage: g [<options>] <command> [<args>]"
-    echo "Commands: any valid 'git' or 'hub' commmand"
+    echo "Commands: any valid 'git' or 'hub' commmand, plus 'open'"
+  else
+    case "$1" in
+      # Opens the current branch in a browser window
+      open)
+        command git remote get-url origin | sed 's/git@/http:\/\//' | sed 's/com:/com\//' | xargs open
+        ;;
+      *)
+        command hub $@
+        ;;
+    esac
   fi
 }
 
