@@ -1,4 +1,4 @@
-# Developer Productivity
+# Dev
 
 A place for all my favorite tools.
 
@@ -17,10 +17,11 @@ A place for all my favorite tools.
 * [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)
 * [1Password](https://1password.com/)
 
-## Available Via Homebrew
+## Available via Homebrew
 
 * [Gron](https://github.com/tomnomnom/gron/)
 * [Node](https://nodejs.org/en/)
 * [Docker](https://www.docker.com/docker-mac)
 * [Hub](https://hub.github.com/)
 * [ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#macos)
+
