@@ -100,7 +100,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>489 214 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>811 641 796 486 0 0 2560 1417 </string>
+	<string>812 737 796 486 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -808,7 +808,7 @@
 					<key>precision</key>
 					<string>normal</string>
 					<key>regex</key>
-					<string>([a-z0-9]+-?)+</string>
+					<string>([a-z0-9]+)-([a-z0-9]+-?)+</string>
 				</dict>
 				<dict>
 					<key>actions</key>
