@@ -1,5 +1,5 @@
 {
-  "Transparency" : 0,
+  "Custom Directory" : "Advanced",
   "Tags" : [
 
   ],
@@ -8,8 +8,8 @@
     "Blue Component" : 1,
     "Red Component" : 0.3333333432674408
   },
-  "Ansi 1 Color" : {
-    "Green Component" : 0,
+  "Ansi 3 Color" : {
+    "Green Component" : 0.73333334922790527,
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
@@ -36,7 +36,11 @@
   },
   "Rows" : 25,
   "Default Bookmark" : "No",
-  "Horizontal Spacing" : 1,
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0
+  },
   "AWDS Tab Option" : "No",
   "Non-ASCII Anti Aliased" : true,
   "Use Bright Bold" : true,
@@ -323,8 +327,11 @@
     },
     {
       "notes" : "email address",
+      "precision" : "high",
       "regex" : "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}\\b",
-      "precision" : "high"
+      "actions" : [
+
+      ]
     },
     {
       "notes" : "HTTP URL",
@@ -349,13 +356,13 @@
     },
     {
       "notes" : "Kubernetes pod",
-      "precision" : "normal",
-      "regex" : "([a-z0-9]+)-([a-z0-9]+-?)+",
+      "precision" : "high",
+      "regex" : "^(([a-z0-9]+)-([a-z0-9]+-?)+)\\s+",
       "actions" : [
         {
           "title" : "kubectl exec sh",
           "action" : 4,
-          "parameter" : "kubectl exec -ti \\0 sh"
+          "parameter" : "kubectl exec -ti \\1 bash"
         }
       ]
     },
@@ -365,6 +372,18 @@
       "regex" : "([a-f0-9]{6})[a-f0-9]{32}",
       "actions" : [
 
+      ]
+    },
+    {
+      "notes" : "Docker container",
+      "precision" : "high",
+      "regex" : "([a-f0-9]{12})\\s+",
+      "actions" : [
+        {
+          "title" : "Docker exec sh",
+          "action" : 4,
+          "parameter" : "docker exec -ti \\1 bash"
+        }
       ]
     }
   ],
@@ -380,11 +399,6 @@
     "Red Component" : 1
   },
   "Shortcut" : "",
-  "Cursor Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527
-  },
   "Triggers" : [
 
   ],
@@ -393,13 +407,14 @@
     "Blue Component" : 0,
     "Red Component" : 0
   },
-  "Ansi 2 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0,
-    "Red Component" : 0
-  },
-  "Custom Directory" : "Advanced",
   "Guid" : "B39CAC04-3EAC-435C-920F-BFEA2A297058",
+  "Transparency" : 0,
+  "Ansi 1 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0,
+    "Red Component" : 0.73333334922790527
+  },
+  "Horizontal Spacing" : 1,
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
@@ -413,14 +428,14 @@
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0
   },
-  "Ansi 3 Color" : {
+  "Ansi 2 Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0,
-    "Red Component" : 0.73333334922790527
-  },
-  "Ansi 4 Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0.73333334922790527,
     "Red Component" : 0
+  },
+  "Cursor Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527
   }
 }
