@@ -1,6 +1,6 @@
-# Dev
+# dev
 
-A place for all my favorite tools.
+All my favorite productivity tools!
 
 ## Free
 
