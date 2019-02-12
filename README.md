@@ -1,6 +1,6 @@
 # dev
 
-All my favorite productivity tools!
+This repository contains a list of my favorite productivity tools and their corresponding configurations.
 
 ## Free
 
